@@ -8,6 +8,8 @@ const port = process.env.PORT;
 
 //routes
 app.use(require('./routes/routes'));
+app.use(require('./routes/contacto'));
+
 
 //middlewares
 app.use ( express.static('public'));
