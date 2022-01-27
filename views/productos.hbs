@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+{{>head}}
+<body>
+    {{>header}}
+<table class="table align-middle container">
+    <thead class="text-center"> 
+    <th>Id</th>
+    <th>Producto</th>
+    <th>Precio</th>
+    </thead>
+    <tbody>
+        {{#each results}}
+        <tr>
+<td class="text-center">{{ producto_id }}</td>
+<td class="text-center">{{ producto_nombre }}</td>
+<td class="text-center">$ {{ producto_precio }}</td>
+
+        </tr>    
+        {{/each}}
+    </tbody>
+</table>
+
+{{>footer}}
+</body>
+</html>
